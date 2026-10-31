@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather & Local Time</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <!-- HEADING -->
+        <header class="heading">
+            <h1>Weather &amp; Time</h1>
+            <p>
+                Enter any city to see its current weather and local time.
+            </p>
+        </header>
+
+        <!-- SEARCH SECTION -->
+        <form class="search" id="searchForm">
+
+            <input
+                id="cityInput"
+                type="text"
+                placeholder="Enter a city (e.g. Delhi, Tokyo, London)"
+                aria-label="City name"
+                required
+            >
+
+            <button id="searchButton" type="submit">
+                ⌕ Search
+            </button>
+
+        </form>
+
+        <!-- STATUS MESSAGE -->
+        <div
+            class="status"
+            id="status"
+            role="status"
+            aria-live="polite">
+        </div>
+
+
+        <!-- WEATHER AND LOCAL TIME SECTION -->
+        <section class="hero" aria-live="polite">
+
+            <div class="hero-inner">
+
+                <!-- LEFT: WEATHER SECTION -->
+                <div class="weather-box">
+
+                    <div class="section-heading">
+                        🌤️ Weather
+                    </div>
+
+                    <div class="place" id="place">
+                        Enter a city to see its weather
+                    </div>
+
+                    <div class="country" id="country">
+                        City and country will appear here
+                    </div>
+
+                    <div class="weather-line">
+
+                        <div
+                            class="weather-icon"
+                            id="weatherIcon"
+                            aria-hidden="true">
+                            🌤️
+                        </div>
+
+                        <div>
+
+                            <div class="temp" id="temperature">
+                                --°C
+                            </div>
+
+                            <div class="description" id="description">
+                                Waiting for weather data...
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT: LOCAL TIME SECTION -->
+                <div class="time-box">
+
+                    <div class="section-heading">
+                        🕒 Local Time
+                    </div>
+
+                    <div class="time-location" id="timeLocation">
+                        Time of searched city
+                    </div>
+
+                    <div class="clock" id="localTime">
+                        --:--:--
+                    </div>
+
+                    <div class="date" id="localDate">
+                        Search a city to see its local time
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- OTHER WEATHER MEASUREMENTS -->
+        <section class="metrics" aria-label="Weather details">
+
+            <!-- FEELS LIKE -->
+            <div class="metric">
+
+                <div class="symbol">🌡️</div>
+
+                <div class="label">
+                    Feels Like
+                </div>
+
+                <div class="value" id="feelsLike">
+                    --°C
+                </div>
+
+            </div>
+
+
+            <!-- HUMIDITY -->
+            <div class="metric">
+
+                <div class="symbol">💧</div>
+
+                <div class="label">
+                    Humidity
+                </div>
+
+                <div class="value" id="humidity">
+                    --%
+                </div>
+
+            </div>
+
+
+            <!-- WIND SPEED -->
+            <div class="metric">
+
+                <div class="symbol">💨</div>
+
+                <div class="label">
+                    Wind Speed
+                </div>
+
+                <div class="value" id="wind">
+                    -- km/h
+                </div>
+
+            </div>
+
+
+            <!-- PRESSURE -->
+            <div class="metric">
+
+                <div class="symbol">🧭</div>
+
+                <div class="label">
+                    Pressure
+                </div>
+
+                <div class="value" id="pressure">
+                    -- hPa
+                </div>
+
+            </div>
+
+
+            <!-- DAY / NIGHT -->
+            <div class="metric">
+
+                <div class="symbol">👁️</div>
+
+                <div class="label">
+                    Day / Night
+                </div>
+
+                <div class="value" id="dayNight">
+                    --
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+       <footer class="footer">
+
+    <div class="footer-content">
+
+        <div class="footer-brand">
+            <h3>🌤️ Weather & Time</h3>
+            <p>Your weather and local time companion.</p>
+        </div>
+
+        <div class="footer-info">
+            <p class="data-source">
+                Weather data powered by
+                <a href="https://open-meteo.com/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Open-Meteo
+                </a>
+            </p>
+        </div>
+
+    </div>
+
+</footer>
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="weather.js"></script>
+
+</body>
+</html>

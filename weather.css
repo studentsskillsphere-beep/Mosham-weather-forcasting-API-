@@ -1,0 +1,437 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* BODY */
+body {
+    margin: 0;
+    min-height: 100vh;
+    background:
+        radial-gradient(ellipse at 12% 15%, #ffd2ad 0%, transparent 42%),
+        radial-gradient(ellipse at 90% 18%, #c5edff 0%, transparent 43%),
+        radial-gradient(ellipse at 50% 100%, #ffe2d2 0%, transparent 48%),
+        linear-gradient(115deg, #ffc69e 0%, #f8dfd0 48%, #b9e5f5 100%);
+
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+      box-sizing: border-box;
+    padding: 20px 18px 10px;
+}
+
+
+
+/* MAIN APP */
+
+.app {
+    width: 100%;
+    max-width: 1750px;
+    margin: 0 auto;
+}
+
+.hero {
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+/* HEADING */
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.heading h1 {
+    font-size: 4rem;
+    color: #172b4d;
+}
+
+.heading p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+
+/* SEARCH SECTION */
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 25px auto 15px;
+    width: 100%;
+    max-width: 750px;
+}
+
+.search input {
+    height: 3.4rem;
+    width: 100%;
+    min-width: 0;
+    border-radius: 8px;
+    border: 3px solid white;
+    outline: none;
+    font-size: 1.1rem;
+    padding: 0 15px;
+}
+
+.search input:focus {
+    border-color: blue;
+}
+
+.search button {
+    height: 3.4rem;
+    min-width: 110px;
+    border-radius: 8px;
+    background-color: blue;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search button:hover {
+    background-color: darkblue;
+}
+
+.search button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* STATUS MESSAGE */
+
+.status {
+    min-height: 25px;
+    text-align: center;
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #172b4d;
+}
+
+
+/* WEATHER AND TIME MAIN SECTION */
+
+.hero {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.hero-inner {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.weather-box,
+.time-box {
+    flex: 1;
+    min-width: 0;
+    min-height: 260px;
+
+    background-color: rgb(77, 137, 187);
+    color: aliceblue;
+
+    padding: 25px 20px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0;
+}
+
+
+/* SECTION HEADINGS */
+
+.section-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+
+
+/* WEATHER DETAILS */
+
+.place {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.country {
+    font-size: 1rem;
+    margin-top: 8px;
+    opacity: 0.9;
+}
+
+.weather-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.weather-icon {
+    font-size: 3.5rem;
+}
+
+.temp {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 1rem;
+    margin-top: 8px;
+}
+
+
+/* LOCAL TIME SECTION */
+
+.time-location {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    opacity: 0.95;
+}
+
+.clock {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.date {
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+
+/* WEATHER MEASUREMENTS */
+
+.metrics {
+    width: 100%;
+    max-width: 950px;
+    min-height: 150px;
+    margin: 25px auto 0;
+    padding: 20px;
+
+    background-color: aliceblue;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+/* INDIVIDUAL METRICS */
+
+.metric {
+    flex: 1;
+    min-width: 120px;
+    text-align: center;
+    padding: 10px;
+    color: rgb(30, 50, 70);
+}
+
+.symbol {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
+
+.label {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.value {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+
+/* FOOTER */
+
+.footer {
+    min-height: 90px;
+    font-size: 1rem;
+    margin-top: 30px;
+    text-align: center;
+    padding: 15px;
+    color: #172b4d;
+}
+
+.bottom {
+    margin-top: 10px;
+}
+
+
+/* TABLET RESPONSIVENESS */
+
+@media (max-width: 800px) {
+
+    .heading h1 {
+        font-size: 3rem;
+    }
+
+    .hero-inner {
+        gap: 15px;
+    }
+
+    .weather-box,
+    .time-box {
+        padding: 20px 12px;
+    }
+
+    .temp {
+        font-size: 2.5rem;
+    }
+
+    .clock {
+        font-size: 2rem;
+    }
+
+    .place {
+        font-size: 1.4rem;
+    }
+
+    .section-heading {
+        font-size: 1.3rem;
+    }
+
+}
+
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 12px;
+    }
+
+    .heading {
+        margin-top: 1.5rem;
+    }
+
+    .heading h1 {
+        font-size: 2.4rem;
+    }
+
+    .heading p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .search {
+        gap: 7px;
+    }
+
+    .search input {
+        font-size: 0.9rem;
+        height: 3rem;
+    }
+
+    .search button {
+        min-width: 85px;
+        height: 3rem;
+        font-size: 0.9rem;
+    }
+
+    .status {
+        font-size: 0.9rem;
+    }
+
+    /* Stack weather and time on mobile */
+
+    .hero-inner {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .weather-box,
+    .time-box {
+        width: 100%;
+        min-height: 230px;
+        padding: 25px 15px;
+    }
+
+    .section-heading {
+        font-size: 1.3rem;
+    }
+
+    .place {
+        font-size: 1.5rem;
+    }
+
+    .temp {
+        font-size: 2.5rem;
+    }
+
+    .weather-icon {
+        font-size: 2.8rem;
+    }
+
+    .clock {
+        font-size: 2rem;
+    }
+
+    .time-location,
+    .date {
+        font-size: 0.9rem;
+    }
+
+    /* Weather measurements */
+
+    .metrics {
+        padding: 15px 8px;
+        gap: 5px;
+    }
+
+    .metric {
+        flex: 1 1 40%;
+        min-width: 110px;
+        padding: 12px 5px;
+    }
+
+    .symbol {
+        font-size: 1.6rem;
+    }
+
+    .label {
+        font-size: 0.9rem;
+    }
+
+    .value {
+        font-size: 1.1rem;
+    }
+
+    /* Footer */
+
+    .footer {
+        font-size: 0.9rem;
+        margin-top: 20px;
+    }
+
+}
